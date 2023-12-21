@@ -1,7 +1,6 @@
 
 body{
     background-color: antiquewhite;
-
 }
 
 *{
@@ -41,17 +40,17 @@ nav ul li{
 
 .container{
     min-height: 70vh;
-    background-color: black;
-    color: white;
-    /* background-color: white;
-    color: black; */
+    /* background-color: black;
+    color: white; */
+    background-color: white;
+    color: black;
     display: flex;
     margin: 28px auto ;
     width:70%;
     border-radius: 14px;
     padding: 28px;
-    background-image: url('bg.jpg');
-    /* background-size: cover; */
+    background-image: url('Sanam-Band.webp');
+    background-size: cover;
 }
 
 .bottom{
@@ -84,6 +83,7 @@ nav ul li{
     display: flex;
     background-color: white;
     /* width: 80%; */
+    width: 19vw;
     color: black;
     margin: 12px 0;
     justify-content: space-between;
