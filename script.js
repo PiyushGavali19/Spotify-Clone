@@ -1,5 +1,4 @@
 
-
 console.log("welcome to Spotify");
 
 let songsIndex = 0;
@@ -71,10 +70,10 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
 
         element.classList.remove('fa-circle-play');
         element.classList.add('fa-circle-pause');
-        audioElement.src = `songs/${songsIndex+1}.mp3`;
+        audioElement.src = `songs/${songsIndex}.mp3`;
         audioElement.play();
         gif.style.opacity = 1;
-        masterSongName.innerText = songs[songsIndex].songname;
+        masterSongName.innerText = songs[songsIndex-1].songname;
         audioElement.currentTime = 0;
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
@@ -89,8 +88,8 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songsIndex+= 1;
     }
-    audioElement.src = `songs/${songsIndex+1}.mp3`;
-    masterSongName.innerText = songs[songsIndex].songname;
+    audioElement.src = `songs/${songsIndex}.mp3`;
+    masterSongName.innerText = songs[songsIndex-1].songname;
     audioElement.play();
     gif.style.opacity = 1;
     audioElement.currentTime = 0;
@@ -105,8 +104,8 @@ document.getElementById('back').addEventListener('click',()=>{
     else{
         songsIndex-= 1;
     }
-    audioElement.src = `songs/${songsIndex+1}.mp3`;
-    masterSongName.innerText = songs[songsIndex].songname;
+    audioElement.src = `songs/${songsIndex}.mp3`;
+    masterSongName.innerText = songs[songsIndex-1].songname;
     audioElement.play();
     gif.style.opacity = 1;
     audioElement.currentTime = 0;
